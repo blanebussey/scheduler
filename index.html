@@ -12,7 +12,7 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body class = p-10>
+  <body>
     <div class="container">
       <div class="row align-items-end">
         <header class=".fixed-top">
@@ -20,96 +20,138 @@
           <p class="lead">A simple calendar app for scheduling your work day</p>
           <p id="currentDay" class="lead"></p>
         </header>
-      <div class="row">
+      </div>
+    </div>   
+    <!-- modal buttons go here -->
+    <div class="container">
+      <div class="row 12">
+        <div class="col">
         <button id="create-task" class="btn btn-block btn-add" data-toggle="modal" data-target="#task-form-modal"><span class="oi oi-plus mr-2"></span>Add Task</button>
         <button id="remove-tasks" class="btn btn-block btn-delete mb-2 mb-md-4"><span class="oi oi-trash mr-2"> </span>Delete All Tasks</button>
-      </div>  
-      </div>
-    </div>    
+     </div>
+    </div>
+  </div>
     <!-- Timeblocks go here -->
-    <main class="container-fluid">
-      <div clas="row">
+    <div class="container" id="9am">
+      <div class="row">
         <div class="col">
           <div class="card">
             <h4 class="card-header">
               9 AM
             </h4>
-            <ul id ="list-9am" ul class="list-group list-group-flush"></ul>
+            <div class="card-body"><ul id ="list-9am" ul class="list-group list-group-flush"></ul></div>
           </div>
         </div>
+      </div>
+    </div>   
         <!--  -->
+    <div class="container" id="10am">
+      <div class="row">
         <div class="col">
           <div class="card">
             <h4 class="card-header">
               1O AM
             </h4>
-            <ul id ="list-10am" ul class="list-group list-group-flush"></ul>
+            <div class="card-body"><ul id ="list-10am" ul class="list-group list-group-flush"></ul></div>
           </div>
         </div>
+      </div>
+    </div>    
          <!--  -->
+    <div class="container" id="11am">  
+      <div class="row"> 
         <div class="col">
           <div class="card">
             <h4 class="card-header">
               11 AM
             </h4>
-            <ul id ="list-11am" ul class="list-group list-group-flush"></ul>
+            <div class="card-body"><ul id ="list-11am" ul class="list-group list-group-flush"></ul></div>
           </div>
         </div>
+      </div> 
+    </div>
          <!--  -->
+    <div class="container" id="12pm"> 
+      <div class="row">  
         <div class="col">
           <div class="card">
             <h4 class="card-header">
               12 PM
             </h4>
-            <ul id ="list-12pm" ul class="list-group list-group-flush"></ul>
+            <div class="card-body"><ul id ="list-12pm" ul class="list-group list-group-flush"></ul></div>
           </div>
         </div>
+      </div> 
+    </div> 
          <!--  -->
+  <div class="container" id="1pm"> 
+    <div class="row">
         <div class="col">
           <div class="card">
             <h4 class="card-header">
               1 PM
             </h4>
-            <ul id ="list-1pm" ul class="list-group list-group-flush"></ul>
+            <div class="card-body"> <ul id ="list-1pm" ul class="list-group list-group-flush"></ul></div>
+           
           </div>
         </div>
+      </div> 
+    </div>
          <!--  -->
+  <div class="container" id="2pm">
+    <div class="row">
         <div class="col">
           <div class="card">
             <h4 class="card-header">
               2 PM
             </h4>
-            <ul id ="list-2pm" ul class="list-group list-group-flush"></ul>
+            <div class="card-body"><ul id ="list-2pm" ul class="list-group list-group-flush"></ul></div>
           </div>
         </div>
+      </div>
+    </div>
          <!--  -->
+  <div class="container" id="3pm">
+    <div class="row">       
         <div class="col">
           <div class="card">
             <h4 class="card-header">
               3 PM 
             </h4>
-            <ul id ="list-3pm" ul class="list-group list-group-flush"></ul>
+            <div class="card-body"><ul id ="list-3pm" ul class="list-group list-group-flush"></ul></div>
           </div>
         </div>
+      </div>
+    </div>
          <!--  -->
+  <div class="container" id="4pm">
+    <div class="row">
         <div class="col">
           <div class="card">
             <h4 class="card-header">
               4 PM 
             </h4>
-            <ul id ="list-4pm" ul class="list-group list-group-flush"></ul>
+            <div class="card-body"><ul id ="list-4pm" ul class="list-group list-group-flush"></ul></div>
           </div>
         </div>
+      </div>
+    </div>
          <!--  -->
+  <div class="container" id="5pm"> 
+    <div class="row">     
         <div class="col">
           <div class="card">
             <h4 class="card-header">
               5 PM 
             </h4>
-            <ul id ="list-5pm" ul class="list-group list-group-flush"></ul>
+            <div class="card-body"> <ul id ="list-5pm" ul class="list-group list-group-flush"></ul></div>
           </div>
         </div>
+      </div> 
+    </div>
          <!--  -->
+  <div class="container" id="6pm">
+    <div class="row">     
         <div class="col">
           <div class="card">
             <h4 class="card-header">
@@ -118,6 +160,8 @@
             <ul id ="list-6pm" ul class="list-group list-group-flush"></ul>
           </div>
         </div>
+      </div> 
+    </div> 
          <!-- end work schedule cards  -->
       </div>
     </main>
