@@ -24,6 +24,9 @@ var saveTasks = function() {
 //modal was triggered
 $("#task-form-modal").on("show.bs.modal"), function() {
      //clear values
-     $("#modalTaskDescription", "#modalDueDate").val("";)
+     $("#modalTaskDescription", "#modalDueDate").val("");
 };
 
+$("task-form-modal .btn-primary").click(function(){
+
+});
