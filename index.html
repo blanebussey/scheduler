@@ -22,180 +22,93 @@
         </header>
       </div>
     </div>   
-    <!-- modal buttons go here -->
-    <div class="container">
-      <div class="row 12">
-        <div class="col">
-        <button id="create-task" class="btn btn-block btn-add" data-toggle="modal" data-target="#task-form-modal"><span class="oi oi-plus mr-2"></span>Add Task</button>
-        <button id="remove-tasks" class="btn btn-block btn-delete mb-2 mb-md-4"><span class="oi oi-trash mr-2"> </span>Delete All Tasks</button>
-     </div>
+   
+    <!-- Timeblocks go here -->
+    <div class="container" >
+      <div class="row time-block" id="9am">
+          <h4 class="col-2 hour">
+            9 AM
+          </h4>
+          <textarea class="col-8 description"> </textarea>
+          <button class="saveBtn col-2">Save Task! </button>
+      </div>   
+        <!--  -->
+    <div class="row time-block" id="10am">
+          <h4 class="col-2 hour">
+            1O AM
+          </h4>
+          <textarea class="col-8 description"></textarea> 
+          <button class="saveBtn col-2"> Save Task!</button>
+      </div>
+         <!--  -->
+    <div class="row time-block" id="11am"> 
+       <h4 class="col-2 hour">
+              11 AM
+        </h4>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">Save Task!</button>  
+    </div>
+         <!--  -->
+    <div class="row time-block" id="12pm">  
+      <h4 class="col-2 hour">
+        12 PM
+      </h4>
+      <textarea class="col-8 description"></textarea>
+      <button class="saveBtn col-2">Save Task!</button>  
+    </div>
+         <!--  -->
+    <div class="row time-block" id="1pm">
+        <h4 class="col-2">
+          1 PM
+        </h4>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">Save Task!</button>  
+    </div>
+         <!--  -->
+    <div class="row time-block" id="2pm">  
+        <h4 class="col-2 hour">
+            2 PM
+          </h4>
+          <textarea class="col-8 description"></textarea>
+          <button class="saveBtn col-2">Save Task!</button>  
+    </div>
+             <!--  -->
+        <div class="row time-block" id="3pm">
+            <h4 class="col-2">
+              3 PM
+            </h4>
+            <textarea class="col-8 description"></textarea>
+            <button class="saveBtn col-2">Save Task!</button>  
+        </div>
+         <!--  -->
+    <div class="row time-block" id="4pm">  
+      <h4 class="col-2 hour">
+        4 PM
+      </h4>
+      <textarea class="col-8 description"></textarea>
+      <button class="saveBtn col-2">Save Task!</button>  
+    </div>
+             <!--  -->
+    <div class="row time-block" id="5pm">  
+      <h4 class="col-2 hour">
+        5 PM
+      </h4>
+      <textarea class="col-8 description"></textarea>
+      <button class="saveBtn col-2">Save Task!</button>  
+      </div>
+            <!--  -->
+    <div class="row time-block" id="6pm">
+        <h4 class="col-2">
+                  6 PM
+        </h4>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">Save Task!</button>  
     </div>
   </div>
-    <!-- Timeblocks go here -->
-    <div class="container" id="9am">
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              9 AM
-            </h4>
-            <div class="card-body"><ul id ="list-9am" ul class="list-group list-group-flush"></ul></div>
-          </div>
-        </div>
-      </div>
-    </div>   
-        <!--  -->
-    <div class="container" id="10am">
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              1O AM
-            </h4>
-            <div class="card-body"><ul id ="list-10am" ul class="list-group list-group-flush"></ul></div>
-          </div>
-        </div>
-      </div>
-    </div>    
-         <!--  -->
-    <div class="container" id="11am">  
-      <div class="row"> 
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              11 AM
-            </h4>
-            <div class="card-body"><ul id ="list-11am" ul class="list-group list-group-flush"></ul></div>
-          </div>
-        </div>
-      </div> 
-    </div>
-         <!--  -->
-    <div class="container" id="12pm"> 
-      <div class="row">  
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              12 PM
-            </h4>
-            <div class="card-body"><ul id ="list-12pm" ul class="list-group list-group-flush"></ul></div>
-          </div>
-        </div>
-      </div> 
-    </div> 
-         <!--  -->
-  <div class="container" id="1pm"> 
-    <div class="row">
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              1 PM
-            </h4>
-            <div class="card-body"> <ul id ="list-1pm" ul class="list-group list-group-flush"></ul></div>
-           
-          </div>
-        </div>
-      </div> 
-    </div>
-         <!--  -->
-  <div class="container" id="2pm">
-    <div class="row">
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              2 PM
-            </h4>
-            <div class="card-body"><ul id ="list-2pm" ul class="list-group list-group-flush"></ul></div>
-          </div>
-        </div>
-      </div>
-    </div>
-         <!--  -->
-  <div class="container" id="3pm">
-    <div class="row">       
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              3 PM 
-            </h4>
-            <div class="card-body"><ul id ="list-3pm" ul class="list-group list-group-flush"></ul></div>
-          </div>
-        </div>
-      </div>
-    </div>
-         <!--  -->
-  <div class="container" id="4pm">
-    <div class="row">
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              4 PM 
-            </h4>
-            <div class="card-body"><ul id ="list-4pm" ul class="list-group list-group-flush"></ul></div>
-          </div>
-        </div>
-      </div>
-    </div>
-         <!--  -->
-  <div class="container" id="5pm"> 
-    <div class="row">     
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              5 PM 
-            </h4>
-            <div class="card-body"> <ul id ="list-5pm" ul class="list-group list-group-flush"></ul></div>
-          </div>
-        </div>
-      </div> 
-    </div>
-         <!--  -->
-  <div class="container" id="6pm">
-    <div class="row">     
-        <div class="col">
-          <div class="card">
-            <h4 class="card-header">
-              6 PM
-            </h4>
-            <ul id ="list-6pm" ul class="list-group list-group-flush"></ul>
-          </div>
-        </div>
-      </div> 
-    </div> 
          <!-- end work schedule cards  -->
       </div>
     </main>
 
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="task-form-modal" tabindex="-1" role="dialog" aria-labelledby="task-form-modal" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="myModalTitle">What would you like to add to your busy day?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="modalTaskDescription">Task description</label>
-            <textarea class="form-control" id="modalTaskDescription" rows="3"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="modalDueDate">Please choose from an available time slot</label>
-            <input type="text" class="form-control" placeholder="e.g 9 AM, 6PM, etc" id="modalDueDate" autocomplete="off">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-save">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
     
