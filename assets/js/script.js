@@ -4,8 +4,8 @@ var now = moment().format("dddd, MMMM Do, YYYY, h:mm:ss A");
      // Saturday, June 9th, 2007, 5:46:21 PM
 $('#currentDay').append(now);
 
-var hours = moment().format("h:mm:ss")
-console.log(hours)
+var hours = moment().format("h:mm:ss");
+
 
 
 $(".saveBtn").on("click", function(){
@@ -30,3 +30,14 @@ $('#4pm .description').val(localStorage.getItem('4pm'));
 $('#5pm .description').val(localStorage.getItem('5pm'));
 $('#6pm .description').val(localStorage.getItem('6pm'));
 
+$(".time-block").each(function() {
+     //this is just like how you grabbed the parent of the save button's id- but in this case we won't use the parent since we are already on the time-block - you will just grab the attribute with the name of data-value
+        var divTime = $(this).attr('data-value')
+        console.log("Time is:", divTime);
+        var momma = parseInt(divTime);
+        console.log(momma)
+        if(divTime > currentTime) {
+             $("time-block").addClass("present")
+        }
+});
+     
