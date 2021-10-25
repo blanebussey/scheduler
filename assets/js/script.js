@@ -4,7 +4,7 @@ var now = moment().format("dddd, MMMM Do, YYYY, h:mm:ss A");
      // Saturday, June 9th, 2007, 5:46:21 PM
 $('#currentDay').append(now);
 
-var hours = moment().format("h:mm:ss");
+var hours = moment().hours()
 
 
 
@@ -36,8 +36,15 @@ $(".time-block").each(function() {
         console.log("Time is:", divTime);
         var momma = parseInt(divTime);
         console.log(momma)
-        if(divTime > currentTime) {
-             $("time-block").addClass("present")
+        if(divTime > hours) {
+             $(this).addClass("past") .removeClass("present") .removeClass("future")
         }
+        else if(divTime = hours) {
+             $(this).addClass("present") .removeClass("future") .removeClass("past")
+        }
+        else if(divTime < hours) {
+             $(this).addClass("future") .removeClass("present") .removeClass("past")
+
+        }  
 });
      
