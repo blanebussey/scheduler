@@ -1,7 +1,12 @@
 
+
 var now = moment().format("dddd, MMMM Do, YYYY, h:mm:ss A");
      // Saturday, June 9th, 2007, 5:46:21 PM
 $('#currentDay').append(now);
+
+var hours = moment().format("h:mm:ss")
+console.log(hours)
+
 
 $(".saveBtn").on("click", function(){
      var time = $(this).parent().attr('id')
@@ -24,3 +29,4 @@ $('#3pm .description').val(localStorage.getItem('3pm'));
 $('#4pm .description').val(localStorage.getItem('4pm'));
 $('#5pm .description').val(localStorage.getItem('5pm'));
 $('#6pm .description').val(localStorage.getItem('6pm'));
+
