@@ -37,13 +37,13 @@ $(".time-block").each(function() {
         var momma = parseInt(divTime);
         console.log(momma)
         if(divTime > hours) {
-             $(this).addClass("past") .removeClass("present") .removeClass("future")
+             $(this).addClass("future") .removeClass("present") .removeClass("past")
         }
-        else if(divTime = hours) {
+        else if(divTime == hours) {
              $(this).addClass("present") .removeClass("future") .removeClass("past")
         }
         else if(divTime < hours) {
-             $(this).addClass("future") .removeClass("present") .removeClass("past")
+             $(this).addClass("past") .removeClass("present") .removeClass("future")
 
         }  
 });
